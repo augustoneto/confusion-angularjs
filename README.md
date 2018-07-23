@@ -5,6 +5,7 @@ Environment:
 - NPM
 - Bower
 - Grunt
+- Gulp
 
 Steps:
 - Execute the command "bower install" within "confusion-angularjs" folder.
@@ -22,3 +23,5 @@ Steps:
 - Execute the command "npm install grunt-usemin --save-dev" folder.
 - Execute the command "npm install grunt-contrib-watch --save-dev" folder.
 - Execute the command "npm install grunt-contrib-connect --save-dev" folder.
+
+- Execute the command "npm install gulp --save-dev" within "confusion-angularjs" folder.

@@ -26,3 +26,4 @@ Steps:
 
 - Execute the command "npm install gulp --save-dev" within "confusion-angularjs" folder.
 - Execute the command "npm install jshint gulp-jshint jshint-stylish gulp-imagemin gulp-concat gulp-uglify gulp-minify-css gulp-usemin gulp-cache gulp-changed gulp-rev gulp-rename gulp-notify  browser-sync del --save-dev" within "confusion-angularjs" folder.
+- Execute the command "npm install gulp-ng-annotate --save-dev" within "confusion-angularjs" folder.

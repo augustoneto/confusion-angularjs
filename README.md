@@ -29,3 +29,4 @@ Steps:
 - Execute the command "npm install gulp-ng-annotate --save-dev" within "confusion-angularjs" folder.
 
 - Execute the command "bower install angular-route -S" within "confusion-angularjs" folder.
+- Execute the command "bower install angular-ui-router -S" within "confusion-angularjs" folder.

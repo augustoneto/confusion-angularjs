@@ -92,4 +92,35 @@ angular.module('confusionApp')
       
         $scope.comment = {author: "", rating: 5, comment: "", date: ""};
     }
-}]);
+}])
+
+// implement the IndexController and About Controller here
+.controller('IndexController', ['$scope', 'menuFactory', 'corporateFactory',
+        function ($scope, menuFactory, corporateFactory) {
+
+        $scope.showDish = false;
+        $scope.message = "Loading...";
+
+        $scope.dish = menuFactory.getDishes()
+          .get({id: 0})
+          .$promise.then(
+            function (response) {
+              $scope.dish = response;
+              $scope.showDish = true; 
+            },
+            function (response) {
+              $scope.message = "Error: " + response.status + " " + response.statusText;
+            }
+        );
+        
+          $scope.promotion = menuFactory.getPromotion(0);
+        $scope.executiveChief = corporateFactory.getLeader(3);
+    }])
+
+.controller('AboutController', ['$scope', 'corporateFactory', 
+                                    function ($scope, corporateFactory) {
+
+        $scope.leaders = corporateFactory.getLeaders();
+}])
+
+;

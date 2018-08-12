@@ -30,3 +30,6 @@ Steps:
 
 - Execute the command "bower install angular-route -S" within "confusion-angularjs" folder.
 - Execute the command "bower install angular-ui-router -S" within "confusion-angularjs" folder.
+
+- Execute the command "npm install json-server -g"
+- To start json-server execute "json-server --watch db.json"

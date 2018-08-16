@@ -9,11 +9,12 @@ angular.module('confusionApp')
     $scope.filtText = '';
     $scope.showDetails = false;
 
-    $scope.dishes = [];
+    $scope.dishes = {};
     menuFactory.getDishes()
     .then(
         function(response) {
             $scope.dishes = response.data;
+            console.log("dishes: " + $scope.dishes);
         }
     );
 
@@ -82,7 +83,7 @@ angular.module('confusionApp')
     .then(
         function(response){
             $scope.dish = response.data;
-            $scope.showDish=true;
+            //$scope.showDish=true;
         }
     );
 
@@ -112,7 +113,7 @@ angular.module('confusionApp')
         .then(
             function(response){
                 $scope.dish = response.data;
-                $scope.showDish = true;
+                //$scope.showDish = true;
             }
         );
         $scope.featuredPromotion = menuFactory.getPromotion(0);

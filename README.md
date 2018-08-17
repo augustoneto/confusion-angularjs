@@ -33,3 +33,5 @@ Steps:
 
 - Execute the command "npm install json-server -g"
 - To start json-server execute "json-server --watch db.json"
+
+- Execute the command "bower install angular-resource -S" within "confusion-angularjs" folder.

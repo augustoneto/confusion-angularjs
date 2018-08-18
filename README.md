@@ -35,3 +35,16 @@ Steps:
 - To start json-server execute "json-server --watch db.json"
 
 - Execute the command "bower install angular-resource -S" within "confusion-angularjs" folder.
+
+- Execute the command "npm install jasmine-core --save-dev" within "confusion-angularjs" folder.
+- Execute the command "npm install karma-cli -g".
+- Execute the command "npm install karma-jasmine --save-dev" within "confusion-angularjs" folder.
+- Execute the command "npm install phantomjs karma-phantomjs-launcher  --save-dev" within "confusion-angularjs" folder.
+- Execute the command "bower install angular-mocks -S" within "confusion-angularjs" folder.
+
+- Execute the command "karma start karma.conf.js" within "test" folder.
+
+- Execute the command "npm install protractor -g".
+- Execute "webdriver-manager update".
+
+- Execute the command "protractor protractor.conf.js" within "test" folder.

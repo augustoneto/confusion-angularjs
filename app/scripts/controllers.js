@@ -70,7 +70,7 @@ angular.module('confusionApp')
         }
         else {
             $scope.invalidChannelSelection = false;
-            
+            feedbackFactory.getFeedback().save($scope.feedback);
             $scope.feedback = {mychannel:"", firstName:"", lastName:"", agree:false, email:"" };
             $scope.feedback.mychannel="";
             $scope.feedbackForm.$setPristine();
